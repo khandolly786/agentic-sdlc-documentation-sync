@@ -12,4 +12,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Pipeline state in `.pipeline/status.json`, managed by `.claude/scripts/pipeline-status.js`.
 
 ### Changed
+- README MCP section documents the `GITHUB_PERSONAL_ACCESS_TOKEN` and `ATLASSIAN_API_TOKEN` environment variables that `.mcp.json` reads, with Windows and macOS/Linux setup commands.
 - Consolidated agents, commands, rules, skills and hooks into the current 8-step layout (`commit-guard`, `pr-gate`, `lib`); legacy phase-numbered files removed.
