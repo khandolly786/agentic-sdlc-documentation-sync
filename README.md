@@ -126,7 +126,18 @@ connection, **skills** are reusable instructions, **hooks** enforce safety.
 | `playwright` | Browser checks, used only by the `verify` agent | nothing |
 
 Secrets are never stored in the repo. `.mcp.json` reads them from
-environment variables.
+environment variables (`${GITHUB_PERSONAL_ACCESS_TOKEN}`, `${ATLASSIAN_API_TOKEN}`).
+Set them in your OS environment before starting Claude Code, then restart the terminal:
+
+```
+# Windows
+setx GITHUB_PERSONAL_ACCESS_TOKEN "<your token>"
+setx ATLASSIAN_API_TOKEN "<your token>"
+
+# macOS / Linux
+export GITHUB_PERSONAL_ACCESS_TOKEN="<your token>"
+export ATLASSIAN_API_TOKEN="<your token>"
+```
 
 ## Ticket logs
 
